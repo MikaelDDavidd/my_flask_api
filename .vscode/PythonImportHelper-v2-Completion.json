@@ -1,0 +1,333 @@
+[
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pathlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "flask_restful",
+        "description": "flask_restful",
+        "isExtraImport": true,
+        "detail": "flask_restful",
+        "documentation": {}
+    },
+    {
+        "label": "Resource",
+        "importPath": "flask_restful",
+        "description": "flask_restful",
+        "isExtraImport": true,
+        "detail": "flask_restful",
+        "documentation": {}
+    },
+    {
+        "label": "firebase_admin",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "firebase_admin",
+        "description": "firebase_admin",
+        "detail": "firebase_admin",
+        "documentation": {}
+    },
+    {
+        "label": "firestore",
+        "importPath": "firebase_admin",
+        "description": "firebase_admin",
+        "isExtraImport": true,
+        "detail": "firebase_admin",
+        "documentation": {}
+    },
+    {
+        "label": "credentials",
+        "importPath": "firebase_admin",
+        "description": "firebase_admin",
+        "isExtraImport": true,
+        "detail": "firebase_admin",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "firestore_adminCallTransformer",
+        "kind": 6,
+        "importPath": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "description": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "peekOfCode": "class firestore_adminCallTransformer(cst.CSTTransformer):\n    CTRL_PARAMS: Tuple[str] = ('retry', 'timeout', 'metadata')\n    METHOD_TO_PARAMS: Dict[str, Tuple[str]] = {\n        'bulk_delete_documents': ('name', 'collection_ids', 'namespace_ids', ),\n        'create_backup_schedule': ('parent', 'backup_schedule', ),\n        'create_database': ('parent', 'database', 'database_id', ),\n        'create_index': ('parent', 'index', ),\n        'delete_backup': ('name', ),\n        'delete_backup_schedule': ('name', ),\n        'delete_database': ('name', 'etag', ),",
+        "detail": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "documentation": {}
+    },
+    {
+        "label": "partition",
+        "kind": 2,
+        "importPath": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "description": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "peekOfCode": "def partition(\n    predicate: Callable[[Any], bool],\n    iterator: Sequence[Any]\n) -> Tuple[List[Any], List[Any]]:\n    \"\"\"A stable, out-of-place partition.\"\"\"\n    results = ([], [])\n    for i in iterator:\n        results[int(predicate(i))].append(i)\n    # Returns trueList, falseList\n    return results[1], results[0]",
+        "detail": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "documentation": {}
+    },
+    {
+        "label": "fix_files",
+        "kind": 2,
+        "importPath": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "description": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "peekOfCode": "def fix_files(\n    in_dir: pathlib.Path,\n    out_dir: pathlib.Path,\n    *,\n    transformer=firestore_adminCallTransformer(),\n):\n    \"\"\"Duplicate the input dir to the output dir, fixing file method calls.\n    Preconditions:\n    * in_dir is a real directory\n    * out_dir is a real, empty directory",
+        "detail": ".venv.bin.fixup_firestore_admin_v1_keywords",
+        "documentation": {}
+    },
+    {
+        "label": "firestoreCallTransformer",
+        "kind": 6,
+        "importPath": ".venv.bin.fixup_firestore_v1_keywords",
+        "description": ".venv.bin.fixup_firestore_v1_keywords",
+        "peekOfCode": "class firestoreCallTransformer(cst.CSTTransformer):\n    CTRL_PARAMS: Tuple[str] = ('retry', 'timeout', 'metadata')\n    METHOD_TO_PARAMS: Dict[str, Tuple[str]] = {\n        'batch_get_documents': ('database', 'documents', 'mask', 'transaction', 'new_transaction', 'read_time', ),\n        'batch_write': ('database', 'writes', 'labels', ),\n        'begin_transaction': ('database', 'options', ),\n        'commit': ('database', 'writes', 'transaction', ),\n        'create_document': ('parent', 'collection_id', 'document', 'document_id', 'mask', ),\n        'delete_document': ('name', 'current_document', ),\n        'get_document': ('name', 'mask', 'transaction', 'read_time', ),",
+        "detail": ".venv.bin.fixup_firestore_v1_keywords",
+        "documentation": {}
+    },
+    {
+        "label": "partition",
+        "kind": 2,
+        "importPath": ".venv.bin.fixup_firestore_v1_keywords",
+        "description": ".venv.bin.fixup_firestore_v1_keywords",
+        "peekOfCode": "def partition(\n    predicate: Callable[[Any], bool],\n    iterator: Sequence[Any]\n) -> Tuple[List[Any], List[Any]]:\n    \"\"\"A stable, out-of-place partition.\"\"\"\n    results = ([], [])\n    for i in iterator:\n        results[int(predicate(i))].append(i)\n    # Returns trueList, falseList\n    return results[1], results[0]",
+        "detail": ".venv.bin.fixup_firestore_v1_keywords",
+        "documentation": {}
+    },
+    {
+        "label": "fix_files",
+        "kind": 2,
+        "importPath": ".venv.bin.fixup_firestore_v1_keywords",
+        "description": ".venv.bin.fixup_firestore_v1_keywords",
+        "peekOfCode": "def fix_files(\n    in_dir: pathlib.Path,\n    out_dir: pathlib.Path,\n    *,\n    transformer=firestoreCallTransformer(),\n):\n    \"\"\"Duplicate the input dir to the output dir, fixing file method calls.\n    Preconditions:\n    * in_dir is a real directory\n    * out_dir is a real, empty directory",
+        "detail": ".venv.bin.fixup_firestore_v1_keywords",
+        "documentation": {}
+    },
+    {
+        "label": "UserCheck",
+        "kind": 6,
+        "importPath": "app.api",
+        "description": "app.api",
+        "peekOfCode": "class UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\nrest_api.add_resource(UserCheck, '/check_user/<string:username>')\nclass Encomenda(Resource):\n    def get(self, username):",
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "Encomenda",
+        "kind": 6,
+        "importPath": "app.api",
+        "description": "app.api",
+        "peekOfCode": "class Encomenda(Resource):\n    def get(self, username):\n        encomendas_ref = db.collection('encomendas').document(username).collection('encomendas')\n        encomendas = [doc.to_dict() for doc in encomendas_ref.stream()]\n        return jsonify(encomendas)\n    def post(self, username):\n        data = request.json\n        encomendas_ref = db.collection('encomendas').document(username).collection('encomendas')\n        encomenda_ref = encomendas_ref.add(data)\n        return jsonify({'id': encomenda_ref.id, 'message': 'Encomenda criada com sucesso!'}), 201",
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "EncomendaDetail",
+        "kind": 6,
+        "importPath": "app.api",
+        "description": "app.api",
+        "peekOfCode": "class EncomendaDetail(Resource):\n    def get(self, username, id):\n        encomenda_ref = db.collection('encomendas').document(username).collection('encomendas').document(id)\n        encomenda = encomenda_ref.get()\n        if encomenda.exists:\n            return jsonify(encomenda.to_dict())\n        return jsonify({'message': 'Encomenda não encontrada!'}), 404\n    def put(self, username, id):\n        encomenda_ref = db.collection('encomendas').document(username).collection('encomendas').document(id)\n        data = request.json",
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "app.api",
+        "description": "app.api",
+        "peekOfCode": "db = firestore.client()\napi = Blueprint('api', __name__)\nrest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404",
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.api",
+        "description": "app.api",
+        "peekOfCode": "api = Blueprint('api', __name__)\nrest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\nrest_api.add_resource(UserCheck, '/check_user/<string:username>')",
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "rest_api",
+        "kind": 5,
+        "importPath": "app.api",
+        "description": "app.api",
+        "peekOfCode": "rest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\nrest_api.add_resource(UserCheck, '/check_user/<string:username>')\nclass Encomenda(Resource):",
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "cred",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "cred = credentials.Certificate('./cedentials.json')\nfirebase_admin.initialize_app(cred)\napp = create_app()\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "app = create_app()\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "run",
+        "documentation": {}
+    }
+]
