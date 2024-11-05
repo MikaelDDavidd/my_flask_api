@@ -317,7 +317,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "cred = credentials.Certificate('./cedentials.json')\nfirebase_admin.initialize_app(cred)\napp = create_app()\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "peekOfCode": "cred = credentials.Certificate('./entregas-hub-firebase-adminsdk-7allj-aa23cf2e52.json')\nfirebase_admin.initialize_app(cred)\napp = create_app()\nif __name__ == '__main__':\n    app.run(debug=True)",
         "detail": "run",
         "documentation": {}
     },

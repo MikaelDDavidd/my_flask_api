@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import credentials
 
 # Inicializa o Firebase Admin SDK
-cred = credentials.Certificate('./cedentials.json')
+cred = credentials.Certificate('./entregas-hub-firebase-adminsdk-7allj-aa23cf2e52.json')
 firebase_admin.initialize_app(cred)
 
 app = create_app()
