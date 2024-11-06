@@ -263,7 +263,7 @@
         "kind": 6,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "class UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\nrest_api.add_resource(UserCheck, '/check_user/<string:username>')\nclass Encomenda(Resource):\n    def get(self, username):",
+        "peekOfCode": "class UserCheck(Resource):\n    def get(self, username):\n        try:\n            # Verifica se o diretório do usuário existe no Firestore\n            encomendas_ref = db.collection('encomendas').document(username)\n            if encomendas_ref.get().exists:\n                return jsonify({'exists': True})\n            return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\n        except Exception as e:\n            print(f\"Erro ao verificar o usuário: {e}\")",
         "detail": "app.api",
         "documentation": {}
     },
@@ -272,7 +272,7 @@
         "kind": 6,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "class Encomenda(Resource):\n    def get(self, username):\n        encomendas_ref = db.collection('encomendas').document(username).collection('encomendas')\n        encomendas = [doc.to_dict() for doc in encomendas_ref.stream()]\n        return jsonify(encomendas)\n    def post(self, username):\n        data = request.json\n        encomendas_ref = db.collection('encomendas').document(username).collection('encomendas')\n        encomenda_ref = encomendas_ref.add(data)\n        return jsonify({'id': encomenda_ref.id, 'message': 'Encomenda criada com sucesso!'}), 201",
+        "peekOfCode": "class Encomenda(Resource):\n    def get(self, username):\n        try:\n            encomendas_ref = db.collection('encomendas').document(username).collection('encomendas')\n            encomendas = [doc.to_dict() for doc in encomendas_ref.stream()]\n            return jsonify(encomendas)\n        except Exception as e:\n            print(f\"Erro ao obter encomendas para o usuário {username}: {e}\")\n            return jsonify({'error': 'Erro ao acessar as encomendas'}), 500\n    def post(self, username):",
         "detail": "app.api",
         "documentation": {}
     },
@@ -281,7 +281,7 @@
         "kind": 6,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "class EncomendaDetail(Resource):\n    def get(self, username, id):\n        encomenda_ref = db.collection('encomendas').document(username).collection('encomendas').document(id)\n        encomenda = encomenda_ref.get()\n        if encomenda.exists:\n            return jsonify(encomenda.to_dict())\n        return jsonify({'message': 'Encomenda não encontrada!'}), 404\n    def put(self, username, id):\n        encomenda_ref = db.collection('encomendas').document(username).collection('encomendas').document(id)\n        data = request.json",
+        "peekOfCode": "class EncomendaDetail(Resource):\n    def get(self, username, id):\n        try:\n            encomenda_ref = db.collection('encomendas').document(username).collection('encomendas').document(id)\n            encomenda = encomenda_ref.get()\n            if encomenda.exists:\n                return jsonify(encomenda.to_dict())\n            return jsonify({'message': 'Encomenda não encontrada!'}), 404\n        except Exception as e:\n            print(f\"Erro ao obter a encomenda {id} para o usuário {username}: {e}\")",
         "detail": "app.api",
         "documentation": {}
     },
@@ -290,7 +290,7 @@
         "kind": 5,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "db = firestore.client()\napi = Blueprint('api', __name__)\nrest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404",
+        "peekOfCode": "db = firestore.client()\napi = Blueprint('api', __name__)\nrest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        try:\n            # Verifica se o diretório do usuário existe no Firestore\n            encomendas_ref = db.collection('encomendas').document(username)\n            if encomendas_ref.get().exists:\n                return jsonify({'exists': True})",
         "detail": "app.api",
         "documentation": {}
     },
@@ -299,7 +299,7 @@
         "kind": 5,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "api = Blueprint('api', __name__)\nrest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\nrest_api.add_resource(UserCheck, '/check_user/<string:username>')",
+        "peekOfCode": "api = Blueprint('api', __name__)\nrest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        try:\n            # Verifica se o diretório do usuário existe no Firestore\n            encomendas_ref = db.collection('encomendas').document(username)\n            if encomendas_ref.get().exists:\n                return jsonify({'exists': True})\n            return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404",
         "detail": "app.api",
         "documentation": {}
     },
@@ -308,7 +308,7 @@
         "kind": 5,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "rest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        # Verifica se o diretório do usuário existe no Firestore\n        encomendas_ref = db.collection('encomendas').document(username)\n        if encomendas_ref.get().exists:\n            return jsonify({'exists': True})\n        return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\nrest_api.add_resource(UserCheck, '/check_user/<string:username>')\nclass Encomenda(Resource):",
+        "peekOfCode": "rest_api = Api(api)\nclass UserCheck(Resource):\n    def get(self, username):\n        try:\n            # Verifica se o diretório do usuário existe no Firestore\n            encomendas_ref = db.collection('encomendas').document(username)\n            if encomendas_ref.get().exists:\n                return jsonify({'exists': True})\n            return jsonify({'exists': False, 'message': 'Usuário não encontrado!'}), 404\n        except Exception as e:",
         "detail": "app.api",
         "documentation": {}
     },
